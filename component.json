@@ -1,7 +1,7 @@
 {
-  "name": "noflo-browser-app",
-  "description": "The best project ever.",
-  "author": "Jon Nordby <jononor@gmail.com>",
+  "name": "c-base-workshop",
+  "description": "C-Base Workshop App",
+  "author": "Tobias Schmidt <royalts@gmail.com>",
   "repo": "noflo/noflo-browser-app",
   "version": "0.1.0",
   "keywords": [],
@@ -10,7 +10,8 @@
     "noflo/noflo-dom": "*",
     "noflo/noflo-core": "*",
     "noflo/noflo-interaction": "*",
-    "noflo/noflo-runtime-webrtc": "*"
+    "noflo/noflo-runtime-webrtc": "*",
+    "noflo/noflo-packets": "*"
   },
   "remotes": [
     "https://raw.githubusercontent.com"
