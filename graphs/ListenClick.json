@@ -1,0 +1,78 @@
+{
+    "properties": {
+        "name": "ListenClick",
+        "environment": {
+            "type": "noflo-browser"
+        }
+    },
+    "inports": {
+        "selector": {
+            "process": "dom/GetElement_dg61j",
+            "port": "selector",
+            "metadata": {
+                "x": -108,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "outports": {
+        "listenmouse_click": {
+            "process": "interaction/ListenMouse_jlnoq",
+            "port": "click",
+            "metadata": {
+                "x": 0,
+                "y": 0,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "getelement_error": {
+            "process": "dom/GetElement_dg61j",
+            "port": "error",
+            "metadata": {
+                "x": 0,
+                "y": 0,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "groups": [],
+    "processes": {
+        "dom/GetElement_dg61j": {
+            "component": "dom/GetElement",
+            "metadata": {
+                "label": "dom/GetElement",
+                "x": 36,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "interaction/ListenMouse_jlnoq": {
+            "component": "interaction/ListenMouse",
+            "metadata": {
+                "label": "interaction/ListenMouse",
+                "x": 252,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "dom/GetElement_dg61j",
+                "port": "element"
+            },
+            "tgt": {
+                "process": "interaction/ListenMouse_jlnoq",
+                "port": "element"
+            },
+            "metadata": {}
+        }
+    ]
+}
